@@ -1,0 +1,85 @@
+body {
+  font-family: 'ABCViafont', serif;
+  background: black;
+  margin: 0;
+  color: white;
+}
+header {
+  background: rgb(254, 17, 197);
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: 'ABCViafont', serif;
+}
+.disclaimer {
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background: rgb(0, 0, 0);
+  color: rgb(144, 220, 255);
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  border-top: 2px solid rgb(254, 17, 197);
+  border-bottom: 2px solid rgb(254, 17, 197);
+  font-family: 'ABCViafont', serif;
+}
+.disclaimer span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 30s linear infinite;
+}
+@font-face {
+        font-family: 'ABCViafont';
+        src: url('ABCViafont-Regular.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+      }
+      
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+main {
+  max-width: 480px;
+  margin: 2rem auto;
+  background: rgba(254, 17, 197, 0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(254, 17, 197, 0.5);
+}
+label, select, input, button {
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  font-family: 'ABCViafont', serif;
+}
+input, select {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: rgb(144, 220, 255);
+  color: #000;
+}
+button {
+  background-color: rgb(254, 17, 197);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+  font-family: 'ABCViafont', serif;
+}
+button:hover {
+  background-color: rgb(220, 0, 170);
+}
+#suggestion {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(144, 220, 255);
+}
